@@ -1,12 +1,10 @@
 name: Test
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
 jobs:
   test:
     name: Test
-    runs-on: ${{matrix.os}}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [windows-latest]
@@ -19,4 +17,4 @@ jobs:
         with:
           milliseconds: 1
       - name: Print the URL of the release draft
-        run: echo ${{steps.create-release-draft.outputs.release-url}}
+        run: echo ${{ steps.create-release-draft.outputs.release-url }}
