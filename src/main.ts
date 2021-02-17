@@ -5,7 +5,7 @@ export {
 
 async function run(): Promise<void> {
   try {
-    core.setOutput("release-url", "https://example.com")
+    core.setOutput('release-url', 'test url')
   } catch (error) {
     core.setFailed(error.message)
   }
