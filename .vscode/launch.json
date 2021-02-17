@@ -7,10 +7,10 @@
         "request": "launch",
         "runtimeArgs": [
           "--inspect-brk",
-          "${workspaceFolder}/auto-release-draft/node_modules/jest/bin/jest.js",
+          "${workspaceFolder}/node_modules/jest/bin/jest.js",
           "--runInBand",
           "--config",
-          "${workspaceFolder}/auto-release-draft/jest.config.js"
+          "${workspaceFolder}/jest.config.js"
         ],
         "console": "integratedTerminal",
         "internalConsoleOptions": "neverOpen",
